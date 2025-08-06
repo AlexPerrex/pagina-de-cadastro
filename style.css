@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+
+html {
+  height: 100vh;
+}
+
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+form {
+  position: relative;
+  left:50%;
+  top:260px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.estilizar {
+  text-align: center;
+  padding:2px;
+  margin: 2px;
+  
+}
+
+.formar {
+  width: 25vw;
+  height: 85vh;
+  background: linear-gradient(135deg,#00d4ff 25%, #8b00ff 75%);
+  color: #0a0a0a;
+  opacity:0.8;  
+  margin:40px;
+  padding:20px;
+  border: 5px groove #1F51FF;
+  border-radius:10px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  html {
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .formar {
+    position: relative;
+    top: 150px;
+    left: 0;
+    transform: translate(0%, 0%);
+    height: auto;
+    width: auto;
+  }
+}
