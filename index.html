@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -15,11 +15,6 @@
   </head>
 
   <body>
-    <picture>
-      <source srcset="./images/samurai-mobile.png" media="(max-width: 600px)" />
-
-      <img src="./images/samurai.png" alt="samurai" />
-    </picture>
 
     <form
       method="GET"
@@ -29,55 +24,53 @@
     >
       <h3 class="estilizar">Cadastro</h3>
 
-      <label>Usuário</label><br />
+      <label>Usuário</label>
       <input
         type="text"
         name="usuario"
         id="usuario"
-        placeholder="Usuario"
-      /><br />
+        placeholder="Usuário"
+      />
 
-      <label>Nome Completo</label><br />
+      <label>Nome Completo</label>
       <input
         type="text"
         name="nome-completo"
         id="nome-completo"
         placeholder="Nome Completo"
-      /><br />
+      />
 
-      <label>Email</label><br />
-      <input type="email" name="email" id="email" placeholder="Email" /><br />
+      <label>Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" />
 
-      <label>Celular</label><br />
+      <label>Celular</label>
       <input
         type="number"
         name="celular"
         id="celular"
         placeholder="Celular"
-      /><br />
+      />
 
-      <label>Senha</label><br />
+      <label>Senha</label>
       <input
         type="password"
         name="senha"
-        id="senha"
+        id="password"
         placeholder="Senha"
-      /><br />
+      />
 
-      <label>Confirmar senha</label><br />
+      <label>Confirmar senha</label>
       <input
         type="password"
         name="senha"
         id="senha"
         placeholder="Confirmar senha"
-      /><br />
+      />
 
-      <br />
-      <br />
+      <label>Data de nascimento</label>
 
-      <label>Data de nascimento</label><br />
-
-      <select name="dia">
+      <div class="data-de-nascimento">
+      <select name="dia" title="dia">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -111,7 +104,7 @@
         <option value="31">31</option>
       </select>
 
-      <select name="mes">
+      <select name="mes" title="mês">
         <option value="jan">Jan</option>
         <option value="fev">Fev</option>
         <option value="mar">Mar</option>
@@ -126,7 +119,7 @@
         <option value="dez">Dez</option>
       </select>
 
-      <select name="ano">
+      <select name="ano" title="ano">
         <option value="1990">1990</option>
         <option value="1991">1991</option>
         <option value="1992">1992</option>
@@ -154,25 +147,22 @@
         <option value="2014">2014</option>
         <option value="2015">2015</option>
       </select>
+      </div>
 
-      <br />
-      <br />
+      <label>Gênero</label>
 
-      <label>Gênero</label><br />
-
+      <div class="genero">
       <label for="feminino">Feminino</label>
       <input type="radio" name="genero" id="feminino" value="feminino" />
 
       <label for="masculino">Masculino</label>
       <input type="radio" name="genero" id="masculino" value="masculino" />
 
-      <!-- <label for="outros">Outros</label>
-      <input type="radio" name="genero" id="outros" value="outros"> -->
+      <label for="outros">Outros</label>
+      <input type="radio" name="genero" id="outros" value="outros">
+</div>
 
-      <br />
-      <br />
-
-      <input type="submit" value="Enviar" />
+      <input class="enviar" type="submit" value="Enviar" />
     </form>
   </body>
 </html>
